@@ -1,1 +1,6 @@
-LIBRARY
+EXPORTS
+	bar_Init
+	bar_GetSize
+	bar_Read
+	bar_Free
+	bar_UnInit
