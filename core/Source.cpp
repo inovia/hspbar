@@ -6,37 +6,42 @@
 #include "ReadBarcode.h"
 #include "TextUtfEncoding.h"
 
+#include "Header.h"
+
 #include <map>
 using namespace std;
 using namespace ZXing;
 
-typedef struct _BAR_RESULT
+// ------------------------------------------------------------------------------
+// UTF8 <- -> UTF-16 文字コード変換
+// https://www.codeproject.com/Articles/26134/UTF16-to-UTF8-to-UTF16-simple-CString-based-conver
+// ------------------------------------------------------------------------------
+static CStringA UTF16toUTF8(const CStringW& utf16)
 {
-	int /*DecodeStatus*/ status;
-	int /*BarcodeFormat*/ format;
+	CStringA utf8;
+	int len = WideCharToMultiByte(CP_UTF8, 0, utf16, -1, NULL, 0, 0, 0);
+	if (len > 1)
+	{
+		char *ptr = utf8.GetBuffer(len - 1);
+		if (ptr) WideCharToMultiByte(CP_UTF8, 0, utf16, -1, ptr, len, 0, 0);
+		utf8.ReleaseBuffer();
+	}
+	return utf8;
+}
 
-	int posTopLeftX;
-	int posTopLeftY;
-	
-	int posTopRightX;
-	int posTopRightY;
-
-	int posBottomLeftX;
-	int posBottomLeftY;
-
-	int posBottomRightX;
-	int posBottomRightY;
-
-	double orientation;
-
-	// バイナリ配列
-	int size;
-	BYTE* rawBytes;
-
-	// テキストにしたもの
-	wchar_t* text;
-
-} BAR_RESULT, *PBAR_RESULT, **PPBAR_RESULT;
+static CStringW UTF8toUTF16(const CStringA& utf8)
+{
+	CStringW utf16;
+	int len = MultiByteToWideChar(CP_UTF8, 0, utf8, -1, NULL, 0);
+	if (len > 1)
+	{
+		wchar_t *ptr = utf16.GetBuffer(len - 1);
+		if (ptr) MultiByteToWideChar(CP_UTF8, 0, utf8, -1, ptr, len);
+		utf16.ReleaseBuffer();
+	}
+	return utf16;
+}
+// ------------------------------------------------------------------------------
 
 // HSP 64bit版がポインタでアクセスできないため、こういう仕様になってます…
 // (32bit版は問題ないんですけどね。)
@@ -51,24 +56,12 @@ static DecodeHints* GetDecodeHints(int nSmartIdx)
 	return nullptr;
 }
 
-int bar_Init( bool tryHarder, bool tryRotate, BarcodeFormat fmt)
-{
-	auto pDecodeHints = new DecodeHints();
-
-	pDecodeHints->setTryHarder( tryHarder);
-	pDecodeHints->setTryRotate( tryRotate);
-	pDecodeHints->setFormats( fmt);
-
-	static int nSeqIdx = -1;
-	g_pDecodeHintsMap[++nSeqIdx] = pDecodeHints;
-	return nSeqIdx;
-}
 
 static void CopyResult(const Result& in, PBAR_RESULT& out)
 {
 	// 構造体へ詰める
-	out->format = static_cast<int>( in.format());
-	out->status = static_cast<int>( in.status());
+	out->format = static_cast<int>(in.format());
+	out->status = static_cast<int>(in.status());
 
 	out->posTopLeftX = in.position().topLeft().x;
 	out->posTopLeftY = in.position().topLeft().y;
@@ -85,16 +78,44 @@ static void CopyResult(const Result& in, PBAR_RESULT& out)
 	out->orientation = in.position().orientation();
 
 	out->size = in.numBits() / 8;
-	out->rawBytes = new BYTE[out->size];
-	::memcpy( out->rawBytes, in.rawBytes().data(), out->size);
+	if (0 < out->size)
+	{
+		out->rawBytes = new BYTE[out->size];
+		::memcpy(out->rawBytes, in.rawBytes().data(), out->size);
+	}
+	else
+	{
+		out->rawBytes = nullptr;
+	}
 
-	out->text = new wchar_t[in.text().length() + 1];
-	::wcscpy( out->text, in.text().c_str());
+	if (0 < in.text().length())
+	{
+		out->text = new wchar_t[in.text().length() + 1];
+		::wcscpy(out->text, in.text().c_str());
+	}
+	else
+	{
+		out->text = nullptr;
+	}
+}
+
+
+int bar_Init( bool tryHarder, bool tryRotate, int fmt)
+{
+	auto pDecodeHints = new DecodeHints();
+
+	pDecodeHints->setTryHarder( tryHarder);
+	pDecodeHints->setTryRotate( tryRotate);
+	pDecodeHints->setFormats( static_cast<BarcodeFormat>(fmt));
+
+	static int nSeqIdx = -1;
+	g_pDecodeHintsMap[++nSeqIdx] = pDecodeHints;
+	return nSeqIdx;
 }
 
 // ImageFormat::Lum は グレースケール
 
-int bar_Read(int nIdx, ImageFormat fmt, const uint8_t* pBuf, int nWidth, int nHeight, int nStride, PBAR_RESULT pRet)
+int bar_Read(int nIdx, int fmt, const uint8_t* pBuf, int nWidth, int nHeight, int nStride, PBAR_RESULT pRet)
 {
 	auto pDecodeHints = GetDecodeHints(nIdx);
 	if ( pDecodeHints == nullptr)
@@ -112,7 +133,7 @@ int bar_Read(int nIdx, ImageFormat fmt, const uint8_t* pBuf, int nWidth, int nHe
 		return -3;
 	}
 
-	auto img = ImageView(pBuf, nWidth, nHeight, fmt, nStride);
+	auto img = ImageView(pBuf, nWidth, nHeight, static_cast<ImageFormat>(fmt), nStride);
 	auto result = ReadBarcode(img, *pDecodeHints);
 	if ( result.isValid()) 
 	{
@@ -121,6 +142,38 @@ int bar_Read(int nIdx, ImageFormat fmt, const uint8_t* pBuf, int nWidth, int nHe
 	}
 
 	return -4;
+}
+
+char* bar_GetTextA(PBAR_RESULT pRet)
+{
+	if ( pRet != nullptr && pRet->text != nullptr)
+	{
+		static CStringA str = pRet->text;
+		return str.GetBuffer();
+	}
+
+	return nullptr;
+}
+
+char* bar_GetTextU8(PBAR_RESULT pRet)
+{
+	if ( pRet != nullptr && pRet->text != nullptr)
+	{
+		static CStringA str = UTF16toUTF8(pRet->text);
+		return str.GetBuffer();
+	}
+
+	return nullptr;
+}
+
+wchar_t* bar_GetTextU16(PBAR_RESULT pRet)
+{
+	if ( pRet != nullptr)
+	{
+		return pRet->text;
+	}
+
+	return nullptr;
 }
 
 int bar_GetSize()

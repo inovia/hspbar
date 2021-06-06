@@ -674,6 +674,7 @@
     <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\JPTextEncoder.cpp" />
     <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\KRTextEncoder.h" />
     <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\KRTextEncoder.cpp" />
+    <ClInclude Include="Header.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

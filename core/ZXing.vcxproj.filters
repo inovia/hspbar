@@ -800,6 +800,7 @@
       <Filter>Sources\textcodec</Filter>
     </ClInclude>
     <ClInclude Include="resource.h" />
+    <ClInclude Include="Header.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Sources">

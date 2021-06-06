@@ -2,5 +2,8 @@ EXPORTS
 	bar_Init
 	bar_GetSize
 	bar_Read
+	bar_GetTextA
+	bar_GetTextU8
+	bar_GetTextU16
 	bar_Free
 	bar_UnInit
