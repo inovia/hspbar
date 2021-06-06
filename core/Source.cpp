@@ -64,6 +64,34 @@ int bar_Init( bool tryHarder, bool tryRotate, BarcodeFormat fmt)
 	return nSeqIdx;
 }
 
+static void CopyResult(const Result& in, PBAR_RESULT& out)
+{
+	// 構造体へ詰める
+	out->format = static_cast<int>( in.format());
+	out->status = static_cast<int>( in.status());
+
+	out->posTopLeftX = in.position().topLeft().x;
+	out->posTopLeftY = in.position().topLeft().y;
+
+	out->posTopRightX = in.position().topRight().x;
+	out->posTopRightY = in.position().topRight().y;
+
+	out->posBottomLeftX = in.position().bottomLeft().x;
+	out->posBottomLeftY = in.position().bottomLeft().y;
+
+	out->posBottomRightX = in.position().bottomRight().x;
+	out->posBottomRightY = in.position().bottomRight().y;
+
+	out->orientation = in.position().orientation();
+
+	out->size = in.numBits() / 8;
+	out->rawBytes = new BYTE[out->size];
+	::memcpy( out->rawBytes, in.rawBytes().data(), out->size);
+
+	out->text = new wchar_t[in.text().length() + 1];
+	::wcscpy( out->text, in.text().c_str());
+}
+
 // ImageFormat::Lum は グレースケール
 
 int bar_Read(int nIdx, ImageFormat fmt, const uint8_t* pBuf, int nWidth, int nHeight, int nStride, PBAR_RESULT pRet)
@@ -88,29 +116,8 @@ int bar_Read(int nIdx, ImageFormat fmt, const uint8_t* pBuf, int nWidth, int nHe
 	auto result = ReadBarcode(img, *pDecodeHints);
 	if ( result.isValid()) 
 	{
-		pRet->format = static_cast<int>(result.format());
-		pRet->status = static_cast<int>(result.status());
-
-		pRet->posTopLeftX = result.position().topLeft().x;
-		pRet->posTopLeftY = result.position().topLeft().y;
-
-		pRet->posTopRightX = result.position().topRight().x;
-		pRet->posTopRightY = result.position().topRight().y;
-
-		pRet->posBottomLeftX = result.position().bottomLeft().x;
-		pRet->posBottomLeftY = result.position().bottomLeft().y;
-
-		pRet->posBottomRightX = result.position().bottomRight().x;
-		pRet->posBottomRightY = result.position().bottomRight().y;
-
-		pRet->orientation = result.position().orientation();
-
-		pRet->size = result.numBits() / 8;
-		pRet->rawBytes = new BYTE[pRet->size];
-		::memcpy( pRet->rawBytes, result.rawBytes().data(), pRet->size );
-
-		pRet->text = new wchar_t[ result.text().length() + 1];
-		::wcscpy( pRet->text, result.text().c_str());
+		CopyResult(result, pRet);
+		return 0;
 	}
 
 	return -4;
