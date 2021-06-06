@@ -1,0 +1,838 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BarcodeFormat.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BitArray.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BitMatrix.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BitMatrixIO.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\CharacterSetECI.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ConcentricFinder.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GenericGF.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GenericGFPoly.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GTIN.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\TextUtfEncoding.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ZXBigInteger.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BinaryBitmap.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BitSource.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\DecodeHints.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\DecodeStatus.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GenericLuminanceSource.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GlobalHistogramBinarizer.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GridSampler.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\HybridBinarizer.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\LuminanceSource.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\MultiFormatReader.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\PerspectiveTransform.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ReadBarcode.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ReedSolomonDecoder.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\Result.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ResultMetadata.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ResultPoint.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\TextDecoder.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\WhiteRectDetector.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ReedSolomonEncoder.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\TextEncoder.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\MultiFormatWriter.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZDecoder.cpp">
+      <Filter>Sources\aztec</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZDetector.cpp">
+      <Filter>Sources\aztec</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZReader.cpp">
+      <Filter>Sources\aztec</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZEncoder.cpp">
+      <Filter>Sources\aztec</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZHighLevelEncoder.cpp">
+      <Filter>Sources\aztec</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZToken.cpp">
+      <Filter>Sources\aztec</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZWriter.cpp">
+      <Filter>Sources\aztec</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMBitLayout.cpp">
+      <Filter>Sources\datamatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMDataBlock.cpp">
+      <Filter>Sources\datamatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMDecoder.cpp">
+      <Filter>Sources\datamatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMDetector.cpp">
+      <Filter>Sources\datamatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMVersion.cpp">
+      <Filter>Sources\datamatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMReader.cpp">
+      <Filter>Sources\datamatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMECEncoder.cpp">
+      <Filter>Sources\datamatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMHighLevelEncoder.cpp">
+      <Filter>Sources\datamatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMSymbolInfo.cpp">
+      <Filter>Sources\datamatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMWriter.cpp">
+      <Filter>Sources\datamatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\maxicode\MCBitMatrixParser.cpp">
+      <Filter>Sources\maxicode</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\maxicode\MCDecoder.cpp">
+      <Filter>Sources\maxicode</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\maxicode\MCReader.cpp">
+      <Filter>Sources\maxicode</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODUPCEANCommon.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode128Patterns.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCodabarReader.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode39Reader.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode93Reader.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode128Reader.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODDataBarCommon.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODDataBarReader.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODDataBarExpandedReader.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODITFReader.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODMultiUPCEANReader.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODReader.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODRowReader.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCodabarWriter.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode39Writer.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode93Writer.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode128Writer.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODEAN8Writer.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODEAN13Writer.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODITFWriter.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODUPCEWriter.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODUPCAWriter.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODWriterHelper.cpp">
+      <Filter>Sources\oned</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\rss\ODRSSExpandedBinaryDecoder.cpp">
+      <Filter>Sources\oned\rss</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\rss\ODRSSFieldParser.cpp">
+      <Filter>Sources\oned\rss</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\rss\ODRSSGenericAppIdDecoder.cpp">
+      <Filter>Sources\oned\rss</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFBarcodeValue.cpp">
+      <Filter>Sources\pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFBoundingBox.cpp">
+      <Filter>Sources\pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFCodewordDecoder.cpp">
+      <Filter>Sources\pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFDecodedBitStreamParser.cpp">
+      <Filter>Sources\pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFDetectionResult.cpp">
+      <Filter>Sources\pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFDetectionResultColumn.cpp">
+      <Filter>Sources\pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFDetector.cpp">
+      <Filter>Sources\pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFModulusGF.cpp">
+      <Filter>Sources\pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFModulusPoly.cpp">
+      <Filter>Sources\pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFReader.cpp">
+      <Filter>Sources\pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFScanningDecoder.cpp">
+      <Filter>Sources\pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFEncoder.cpp">
+      <Filter>Sources\pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFHighLevelEncoder.cpp">
+      <Filter>Sources\pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFWriter.cpp">
+      <Filter>Sources\pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRCodecMode.cpp">
+      <Filter>Sources\qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRErrorCorrectionLevel.cpp">
+      <Filter>Sources\qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRVersion.cpp">
+      <Filter>Sources\qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRBitMatrixParser.cpp">
+      <Filter>Sources\qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRDataBlock.cpp">
+      <Filter>Sources\qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRDecoder.cpp">
+      <Filter>Sources\qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRDetector.cpp">
+      <Filter>Sources\qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRFormatInformation.cpp">
+      <Filter>Sources\qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRReader.cpp">
+      <Filter>Sources\qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QREncoder.cpp">
+      <Filter>Sources\qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRMaskUtil.cpp">
+      <Filter>Sources\qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRMatrixUtil.cpp">
+      <Filter>Sources\qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRWriter.cpp">
+      <Filter>Sources\qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\Big5MapTable.cpp">
+      <Filter>Sources\textcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\KRHangulMapping.cpp">
+      <Filter>Sources\textcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\Big5TextDecoder.cpp">
+      <Filter>Sources\textcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\GBTextDecoder.cpp">
+      <Filter>Sources\textcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\JPTextDecoder.cpp">
+      <Filter>Sources\textcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\KRTextDecoder.cpp">
+      <Filter>Sources\textcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\Big5TextEncoder.cpp">
+      <Filter>Sources\textcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\GBTextEncoder.cpp">
+      <Filter>Sources\textcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\JPTextEncoder.cpp">
+      <Filter>Sources\textcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\KRTextEncoder.cpp">
+      <Filter>Sources\textcodec</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BarcodeFormat.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BitArray.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BitHacks.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BitMatrix.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BitMatrixCursor.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BitMatrixIO.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ByteArray.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ByteMatrix.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\CharacterSet.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\CharacterSetECI.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ConcentricFinder.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\CustomData.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\Flags.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GenericGF.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GenericGFPoly.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GTIN.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\LogMatrix.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\Matrix.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\Pattern.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\Point.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\Quadrilateral.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\RegressionLine.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\Scope.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\TextUtfEncoding.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\TritMatrix.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ZXBigInteger.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ZXConfig.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ZXNullable.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ZXContainerAlgorithms.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ZXTestSupport.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BinaryBitmap.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BitSource.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\DecodeHints.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\DecodeStatus.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\DecoderResult.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\DetectorResult.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GenericLuminanceSource.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GlobalHistogramBinarizer.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GridSampler.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\HybridBinarizer.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\LuminanceSource.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\MultiFormatReader.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\PerspectiveTransform.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\Reader.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ReadBarcode.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ReedSolomonDecoder.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\Result.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ResultMetadata.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ResultPoint.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\TextDecoder.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ThresholdBinarizer.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\WhiteRectDetector.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ReedSolomonEncoder.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\TextEncoder.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\MultiFormatWriter.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZDecoder.h">
+      <Filter>Sources\aztec</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZDetector.h">
+      <Filter>Sources\aztec</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZDetectorResult.h">
+      <Filter>Sources\aztec</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZReader.h">
+      <Filter>Sources\aztec</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZEncodingState.h">
+      <Filter>Sources\aztec</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZEncoder.h">
+      <Filter>Sources\aztec</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZHighLevelEncoder.h">
+      <Filter>Sources\aztec</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZToken.h">
+      <Filter>Sources\aztec</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZWriter.h">
+      <Filter>Sources\aztec</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMBitLayout.h">
+      <Filter>Sources\datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMDataBlock.h">
+      <Filter>Sources\datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMDecoder.h">
+      <Filter>Sources\datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMDetector.h">
+      <Filter>Sources\datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMVersion.h">
+      <Filter>Sources\datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMReader.h">
+      <Filter>Sources\datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMECEncoder.h">
+      <Filter>Sources\datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMEncoderContext.h">
+      <Filter>Sources\datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMHighLevelEncoder.h">
+      <Filter>Sources\datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMSymbolInfo.h">
+      <Filter>Sources\datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMSymbolShape.h">
+      <Filter>Sources\datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMWriter.h">
+      <Filter>Sources\datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\maxicode\MCBitMatrixParser.h">
+      <Filter>Sources\maxicode</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\maxicode\MCDecoder.h">
+      <Filter>Sources\maxicode</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\maxicode\MCReader.h">
+      <Filter>Sources\maxicode</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODUPCEANCommon.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode128Patterns.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCodabarReader.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode39Reader.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode93Reader.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode128Reader.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODDataBarCommon.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODDataBarReader.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODDataBarExpandedReader.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODITFReader.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODMultiUPCEANReader.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODReader.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODRowReader.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCodabarWriter.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode39Writer.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode93Writer.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode128Writer.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODEAN8Writer.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODEAN13Writer.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODITFWriter.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODUPCEWriter.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODUPCAWriter.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODWriterHelper.h">
+      <Filter>Sources\oned</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\rss\ODRSSExpandedBinaryDecoder.h">
+      <Filter>Sources\oned\rss</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\rss\ODRSSFieldParser.h">
+      <Filter>Sources\oned\rss</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\rss\ODRSSGenericAppIdDecoder.h">
+      <Filter>Sources\oned\rss</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFBarcodeMetadata.h">
+      <Filter>Sources\pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFBarcodeValue.h">
+      <Filter>Sources\pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFBoundingBox.h">
+      <Filter>Sources\pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFCodeword.h">
+      <Filter>Sources\pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFCodewordDecoder.h">
+      <Filter>Sources\pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFDecodedBitStreamParser.h">
+      <Filter>Sources\pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFDecoderResultExtra.h">
+      <Filter>Sources\pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFDetectionResult.h">
+      <Filter>Sources\pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFDetectionResultColumn.h">
+      <Filter>Sources\pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFDetector.h">
+      <Filter>Sources\pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFModulusGF.h">
+      <Filter>Sources\pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFModulusPoly.h">
+      <Filter>Sources\pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFReader.h">
+      <Filter>Sources\pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFScanningDecoder.h">
+      <Filter>Sources\pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFCompaction.h">
+      <Filter>Sources\pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFEncoder.h">
+      <Filter>Sources\pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFHighLevelEncoder.h">
+      <Filter>Sources\pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFWriter.h">
+      <Filter>Sources\pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRCodecMode.h">
+      <Filter>Sources\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRErrorCorrectionLevel.h">
+      <Filter>Sources\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRVersion.h">
+      <Filter>Sources\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRBitMatrixParser.h">
+      <Filter>Sources\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRDataBlock.h">
+      <Filter>Sources\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRDataMask.h">
+      <Filter>Sources\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRDecoder.h">
+      <Filter>Sources\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRDecoderMetadata.h">
+      <Filter>Sources\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRDetector.h">
+      <Filter>Sources\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRECB.h">
+      <Filter>Sources\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRFormatInformation.h">
+      <Filter>Sources\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRReader.h">
+      <Filter>Sources\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QREncoder.h">
+      <Filter>Sources\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QREncodeResult.h">
+      <Filter>Sources\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRMaskUtil.h">
+      <Filter>Sources\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRMatrixUtil.h">
+      <Filter>Sources\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRWriter.h">
+      <Filter>Sources\qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\Big5MapTable.h">
+      <Filter>Sources\textcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\KRHangulMapping.h">
+      <Filter>Sources\textcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\Big5TextDecoder.h">
+      <Filter>Sources\textcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\GBTextDecoder.h">
+      <Filter>Sources\textcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\JPTextDecoder.h">
+      <Filter>Sources\textcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\KRTextDecoder.h">
+      <Filter>Sources\textcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\Big5TextEncoder.h">
+      <Filter>Sources\textcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\GBTextEncoder.h">
+      <Filter>Sources\textcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\JPTextEncoder.h">
+      <Filter>Sources\textcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\KRTextEncoder.h">
+      <Filter>Sources\textcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{A5DE3B54-82D6-3B38-A3A6-137A953A5000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\aztec">
+      <UniqueIdentifier>{DBEC0E14-2B00-3F52-9DE2-6010A65AFB9E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\datamatrix">
+      <UniqueIdentifier>{557D77C8-5CE5-30B6-B9B1-74BCEBF5A830}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\maxicode">
+      <UniqueIdentifier>{62855C98-A033-31CF-8528-762886FEC431}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\oned">
+      <UniqueIdentifier>{874FE4F0-2D2E-3EB2-92BE-685568BEE1FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\oned\rss">
+      <UniqueIdentifier>{CD1DF237-848B-377F-BD77-3A287E76A0AA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\pdf417">
+      <UniqueIdentifier>{3C0F5585-BD56-3163-87E3-B9DC5737F114}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\qrcode">
+      <UniqueIdentifier>{A1A55507-48A9-390E-AC57-73B6278A8030}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\textcodec">
+      <UniqueIdentifier>{BBA3EA33-7AAB-345F-B667-8B7CAEAE3026}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\LICENSE" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,687 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9766DA23-1C42-3871-929A-ACDFA6AF30FF}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ZXing</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\inovia\Downloads\zxing-cpp-master\core\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ZXing.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">hspbar</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">hspbar64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\inovia\Downloads\zxing-cpp-master\core\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ZXing.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">hspbar</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">hspbar64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\inovia\Downloads\zxing-cpp-master\core\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">ZXing.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">hspbar</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">hspbar64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\inovia\Downloads\zxing-cpp-master\core\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">ZXing.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">hspbar</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">hspbar64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\Users\inovia\Downloads\zxing-cpp-master\core\Debug\ZXing.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\Users\inovia\Downloads\zxing-cpp-master\core\Debug\ZXing.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>C:\Users\inovia\Downloads\zxing-cpp-master\core\Release\ZXing.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>C:\Users\inovia\Downloads\zxing-cpp-master\core\Release\ZXing.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>C:\Users\inovia\Downloads\zxing-cpp-master\core\MinSizeRel\ZXing.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>C:\Users\inovia\Downloads\zxing-cpp-master\core\MinSizeRel\ZXing.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\Users\inovia\Downloads\zxing-cpp-master\core\RelWithDebInfo\ZXing.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\Users\inovia\Downloads\zxing-cpp-master\core\RelWithDebInfo\ZXing.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\inovia\Downloads\zxing-cpp-master\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BarcodeFormat.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BarcodeFormat.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BitArray.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BitArray.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BitHacks.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BitMatrix.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BitMatrix.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BitMatrixCursor.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BitMatrixIO.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BitMatrixIO.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ByteArray.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ByteMatrix.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\CharacterSet.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\CharacterSetECI.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\CharacterSetECI.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ConcentricFinder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ConcentricFinder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\CustomData.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\Flags.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GenericGF.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GenericGF.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GenericGFPoly.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GenericGFPoly.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GTIN.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GTIN.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\LogMatrix.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\Matrix.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\Pattern.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\Point.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\Quadrilateral.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\RegressionLine.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\Scope.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\TextUtfEncoding.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\TextUtfEncoding.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\TritMatrix.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ZXBigInteger.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ZXBigInteger.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ZXConfig.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ZXNullable.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ZXContainerAlgorithms.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ZXTestSupport.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BinaryBitmap.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BinaryBitmap.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BitSource.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BitSource.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\DecodeHints.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\DecodeHints.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\DecodeStatus.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\DecodeStatus.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\DecoderResult.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\DetectorResult.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GenericLuminanceSource.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GenericLuminanceSource.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GlobalHistogramBinarizer.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GlobalHistogramBinarizer.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GridSampler.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\GridSampler.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\HybridBinarizer.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\HybridBinarizer.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\LuminanceSource.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\LuminanceSource.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\MultiFormatReader.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\MultiFormatReader.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\PerspectiveTransform.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\PerspectiveTransform.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\Reader.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ReadBarcode.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ReadBarcode.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ReedSolomonDecoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ReedSolomonDecoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\Result.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\Result.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ResultMetadata.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ResultMetadata.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ResultPoint.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ResultPoint.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\TextDecoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\TextDecoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ThresholdBinarizer.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\WhiteRectDetector.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\WhiteRectDetector.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ReedSolomonEncoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\ReedSolomonEncoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\TextEncoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\TextEncoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\MultiFormatWriter.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\MultiFormatWriter.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZDecoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZDecoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZDetector.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZDetector.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZDetectorResult.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZReader.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZReader.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZEncodingState.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZEncoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZEncoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZHighLevelEncoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZHighLevelEncoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZToken.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZToken.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZWriter.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\aztec\AZWriter.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMBitLayout.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMBitLayout.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMDataBlock.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMDataBlock.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMDecoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMDecoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMDetector.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMDetector.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMVersion.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMVersion.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMReader.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMReader.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMECEncoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMECEncoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMEncoderContext.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMHighLevelEncoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMHighLevelEncoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMSymbolInfo.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMSymbolInfo.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMSymbolShape.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMWriter.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\datamatrix\DMWriter.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\maxicode\MCBitMatrixParser.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\maxicode\MCBitMatrixParser.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\maxicode\MCDecoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\maxicode\MCDecoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\maxicode\MCReader.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\maxicode\MCReader.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODUPCEANCommon.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODUPCEANCommon.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode128Patterns.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode128Patterns.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCodabarReader.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCodabarReader.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode39Reader.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode39Reader.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode93Reader.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode93Reader.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode128Reader.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode128Reader.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODDataBarCommon.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODDataBarCommon.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODDataBarReader.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODDataBarReader.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODDataBarExpandedReader.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODDataBarExpandedReader.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODITFReader.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODITFReader.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODMultiUPCEANReader.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODMultiUPCEANReader.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODReader.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODReader.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODRowReader.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODRowReader.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCodabarWriter.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCodabarWriter.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode39Writer.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode39Writer.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode93Writer.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode93Writer.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode128Writer.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODCode128Writer.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODEAN8Writer.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODEAN8Writer.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODEAN13Writer.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODEAN13Writer.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODITFWriter.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODITFWriter.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODUPCEWriter.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODUPCEWriter.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODUPCAWriter.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODUPCAWriter.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODWriterHelper.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\ODWriterHelper.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\rss\ODRSSExpandedBinaryDecoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\rss\ODRSSExpandedBinaryDecoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\rss\ODRSSFieldParser.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\rss\ODRSSFieldParser.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\rss\ODRSSGenericAppIdDecoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\oned\rss\ODRSSGenericAppIdDecoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFBarcodeMetadata.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFBarcodeValue.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFBarcodeValue.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFBoundingBox.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFBoundingBox.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFCodeword.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFCodewordDecoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFCodewordDecoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFDecodedBitStreamParser.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFDecodedBitStreamParser.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFDecoderResultExtra.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFDetectionResult.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFDetectionResult.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFDetectionResultColumn.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFDetectionResultColumn.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFDetector.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFDetector.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFModulusGF.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFModulusGF.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFModulusPoly.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFModulusPoly.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFReader.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFReader.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFScanningDecoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFScanningDecoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFCompaction.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFEncoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFEncoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFHighLevelEncoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFHighLevelEncoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFWriter.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\pdf417\PDFWriter.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRCodecMode.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRCodecMode.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRErrorCorrectionLevel.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRErrorCorrectionLevel.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRVersion.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRVersion.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRBitMatrixParser.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRBitMatrixParser.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRDataBlock.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRDataBlock.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRDataMask.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRDecoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRDecoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRDecoderMetadata.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRDetector.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRDetector.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRECB.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRFormatInformation.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRFormatInformation.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRReader.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRReader.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QREncoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QREncoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QREncodeResult.h" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRMaskUtil.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRMaskUtil.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRMatrixUtil.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRMatrixUtil.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRWriter.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\qrcode\QRWriter.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\Big5MapTable.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\Big5MapTable.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\KRHangulMapping.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\KRHangulMapping.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\Big5TextDecoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\Big5TextDecoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\GBTextDecoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\GBTextDecoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\JPTextDecoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\JPTextDecoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\KRTextDecoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\KRTextDecoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\Big5TextEncoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\Big5TextEncoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\GBTextEncoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\GBTextEncoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\JPTextEncoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\JPTextEncoder.cpp" />
+    <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\KRTextEncoder.h" />
+    <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\KRTextEncoder.cpp" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\LICENSE" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
