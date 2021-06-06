@@ -346,6 +346,7 @@
     <ClCompile Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\textcodec\KRTextEncoder.cpp">
       <Filter>Sources\textcodec</Filter>
     </ClCompile>
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\inovia\Downloads\zxing-cpp-master\core\src\BarcodeFormat.h">
@@ -834,5 +835,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\LICENSE" />
+    <None Include="Source.def" />
   </ItemGroup>
 </Project>
