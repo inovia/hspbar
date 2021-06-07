@@ -100,12 +100,12 @@ static void CopyResult(const Result& in, PBAR_RESULT& out)
 }
 
 
-int bar_Init( bool tryHarder, bool tryRotate, int fmt)
+int bar_Init(BOOL tryHarder, BOOL tryRotate, int fmt)
 {
 	auto pDecodeHints = new DecodeHints();
 
-	pDecodeHints->setTryHarder( tryHarder);
-	pDecodeHints->setTryRotate( tryRotate);
+	pDecodeHints->setTryHarder( (tryHarder != FALSE));
+	pDecodeHints->setTryRotate( (tryRotate != FALSE));
 	pDecodeHints->setFormats( static_cast<BarcodeFormat>(fmt));
 
 	static int nSeqIdx = -1;
