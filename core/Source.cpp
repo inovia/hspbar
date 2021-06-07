@@ -247,9 +247,10 @@ int bar_CopyTextU8(PBAR_RESULT pRet, char* pDest, int nDestSize)
 
 char* bar_GetTextU8(PBAR_RESULT pRet)
 {
+	static CStringA str;
 	if ( pRet != nullptr && pRet->text != nullptr)
 	{
-		static CStringA str = UTF16toUTF8(pRet->text);
+		str = UTF16toUTF8( pRet->text);
 		return str.GetBuffer();
 	}
 
