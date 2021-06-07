@@ -39,6 +39,7 @@ int bar_Init(bool tryHarder, bool tryRotate, int fmt);
 int bar_Read(int nIdx, int fmt, const uint8_t* pBuf, int nWidth, int nHeight, int nStride, PBAR_RESULT pRet);
 char* bar_GetTextA(PBAR_RESULT pRet);
 char* bar_GetTextU8(PBAR_RESULT pRet);
+int bar_CopyTextU8(PBAR_RESULT pRet, char* pDest, int nSize);
 wchar_t* bar_GetTextU16(PBAR_RESULT pRet);
 int bar_GetSize();
 int bar_Free(PBAR_RESULT pRet);

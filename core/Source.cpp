@@ -155,6 +155,38 @@ char* bar_GetTextA(PBAR_RESULT pRet)
 	return nullptr;
 }
 
+// HSPInt64.dll なしで文字列を取り扱う用
+// var, var(nullptr), int なので 64bitランタイムでも扱える
+int bar_CopyTextU8(PBAR_RESULT pRet, char* pDest, int nDestSize)
+{
+	if ( pRet == nullptr)
+	{
+		return -1;
+	}
+
+	if ( pRet->text == nullptr)
+	{
+		return -2;
+	}
+
+	const auto& pStr = bar_GetTextU8( pRet);
+	int nSrcSize = ::strlen( pStr) + 1;
+	if ( pDest == nullptr)
+	{
+		// 必要なバッファサイズを返す
+		return nSrcSize;
+	}
+
+	if ( nDestSize < nSrcSize )
+	{
+		return -3;
+	}
+
+	::memcpy( pDest, pStr, nSrcSize);
+
+	return nSrcSize;
+}
+
 char* bar_GetTextU8(PBAR_RESULT pRet)
 {
 	if ( pRet != nullptr && pRet->text != nullptr)
