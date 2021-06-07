@@ -133,7 +133,64 @@ int bar_Read(int nIdx, int fmt, const uint8_t* pBuf, int nWidth, int nHeight, in
 		return -3;
 	}
 
-	auto img = ImageView(pBuf, nWidth, nHeight, static_cast<ImageFormat>(fmt), nStride);
+	if ( nWidth <= 0 || nHeight <= 0)
+	{
+		return -4;
+	}
+
+	// stride が 0 の場合は、自動計算してみる
+	ImageFormat format = static_cast<ImageFormat>(fmt);
+	if ( nStride == 0)
+	{
+		if ( format == ImageFormat::BGR || format == ImageFormat::RGB)
+		{
+			nStride = -(nWidth * 24 + 31) / 32 * 4;		// HSP用
+		}
+		else if ( format == ImageFormat::BGRX
+			|| format == ImageFormat::RGBX
+			|| format == ImageFormat::XBGR
+			|| format == ImageFormat::XRGB)
+		{
+			nStride = -nWidth * 4;
+		}
+		else if (format == ImageFormat::Lum)
+		{
+			nStride = -(nWidth * 8 + 31) / 32 * 4;
+		}
+	}
+
+	// strideがマイナスなら上下反転する (HSP用)
+	bool bReverse = false;
+	if ( nStride < 0)
+	{
+		nStride = -nStride;
+		bReverse = true;
+	}
+
+	DWORD dwSize = nStride * nHeight;
+	std::unique_ptr<uint8_t[]> pNewBuf( new uint8_t[dwSize]);
+
+	const uint8_t* pData;
+	if ( bReverse)
+	{
+		// ビットマップを上下反転する
+		auto pSeek_Src = pBuf;
+		auto pSeek_Dest = pNewBuf.get() + dwSize;
+
+		for (int i = 0; i < nHeight; i++)
+		{
+			pSeek_Dest -= nStride;
+			::memcpy_s( pSeek_Dest, nStride, pSeek_Src, nStride);
+			pSeek_Src += nStride;
+		}
+		pData = pNewBuf.get();
+	}
+	else {
+		// 反転しないのでそのまま
+		pData = pBuf;
+	}
+
+	auto img = ImageView( pData, nWidth, nHeight, format, nStride);
 	auto result = ReadBarcode(img, *pDecodeHints);
 	if ( result.isValid()) 
 	{
@@ -146,9 +203,10 @@ int bar_Read(int nIdx, int fmt, const uint8_t* pBuf, int nWidth, int nHeight, in
 
 char* bar_GetTextA(PBAR_RESULT pRet)
 {
+	static CStringA str;
 	if ( pRet != nullptr && pRet->text != nullptr)
-	{
-		static CStringA str = pRet->text;
+	{	
+		str = pRet->text;
 		return str.GetBuffer();
 	}
 
