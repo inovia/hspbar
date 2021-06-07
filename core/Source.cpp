@@ -138,10 +138,10 @@ int bar_Read(int nIdx, int fmt, const uint8_t* pBuf, int nWidth, int nHeight, in
 	if ( result.isValid()) 
 	{
 		CopyResult(result, pRet);
-		return 0;
+		return 1;
 	}
 
-	return -4;
+	return 0;
 }
 
 char* bar_GetTextA(PBAR_RESULT pRet)
